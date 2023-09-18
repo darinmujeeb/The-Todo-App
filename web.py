@@ -12,9 +12,9 @@ def add_todo():
     st.session_state['new_todo'] = ""     # Added extra, not included in tutorial; clears text input after hitting enter
 
 
-st.title("My To Do App")
-st.subheader("This is my first Python app")
-st.write("This is a test")
+st.title("The To Do App")
+st.subheader("A minimal web app designed to list to-do items")
+st.write("Built by Darin Mujeeb")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
